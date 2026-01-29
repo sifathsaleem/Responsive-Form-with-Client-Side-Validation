@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+:root {
+    --primary-red-400: #ff7a7a;
+    --primary-green-400: #38cc8c;
+
+    --accent-purple-700: #6055a5;
+
+    --neutral-gray-900: #3e3c49;
+    --neutral-purple-350: #b9b6d3;
+
+    --attribution: #3d52a3;
+
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+/* Common Classes */
+
+/* .text-break {
+    display: inline;
+} */
+
+/* Form Start */
+
+.form-section {
+    background-color: var(--primary-red-400);
+    background-image: url('./images/bg-intro-desktop.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: #fff;
+    flex: 1;
+    height: 100%;
+
+}
+.form-wrapper > .rght-content {
+    flex: 1;
+
+    
+}
+
+.form-wrapper > .lft-content {
+    flex: 1;
+
+}
+
+
+.form-wrapper > .lft-content > h1 {
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-wrapper > .lft-content > p {
+    line-height: 1.8rem;
+}
+
+
+
+
+.form-wrapper > .rght-content > div:first-child {
+    background-color: var(--accent-purple-700);
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 0 rgba(51, 51, 51, .3);
+    cursor: pointer;
+}
+
+.form-wrapper > .rght-content > div:first-child > p {
+    color: var(--neutral-purple-350);
+    font-size: 12px;
+}
+
+.form-wrapper > .rght-content > div:first-child > p > a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-wrapper > .rght-content > .form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 0 rgba(51, 51, 51, .3);
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group {
+    width: 100%;
+    margin-bottom: 5px;
+    
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div:first-child {
+    position: relative;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div:first-child > .toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div > .toggle-password .eye-open {
+    display: none;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div > .toggle-password .eye-closed {
+    display: none;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div > .toggle-password img.show {
+    display: block;
+}
+
+
+
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div > .error-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div > .success-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div >
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div> span > img {
+    color: #ff0000;
+    
+}
+
+
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div.error-field {
+    font-size: 11px;
+    color: #f53733;
+    width: 100%;
+    text-align: right;
+    font-style: italic;
+    /* margin-top: 2px; */
+    padding-right: 10px;
+    height: 20px;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div > input.error {
+    border: 1px solid #f53733;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form > .input-group > div > input.success {
+    border: 1px solid #32BA7C;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form input:focus {
+    outline: none;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form input::placeholder {
+    font-weight: 500;
+    transition: color 300ms ease-in-out;
+}
+
+/* .form-wrapper > .rght-content > div:nth-child(2) > form input.error::placeholder {
+    color: #f53733;
+} */
+
+.form-wrapper > .rght-content > div:nth-child(2) > form button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--primary-green-400);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form p {
+    color: #999;
+    font-size: 11px;
+    text-align: center;
+}
+
+.form-wrapper > .rght-content > div:nth-child(2) > form p > a {
+    color: var(--primary-red-400);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+
+/* Form End */
+
+@media screen and (min-width: 1300px) {
+    .text-break {
+        display: block;
+        white-space: nowrap;
+    }
+} 
+
+
+@media screen and (max-width: 992px) {
+
+    .form-wrapper {
+        padding: 50px 0;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    .form-wrapper > .lft-content {
+        text-align: center;
+}
+
+
+
+
+} 
+
+
+
+footer {
+    text-align: center;
+    padding: 11px;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer a {
+    font-weight: 500;
+    text-decoration: none;
+}

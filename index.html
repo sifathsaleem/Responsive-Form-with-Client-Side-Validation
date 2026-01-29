@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <section class="form-section">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="lft-content">
+            <h1>
+              <span class="text-break">Learn to code by</span>
+              <span class="text-break">watching others</span>
+            </h1>
+            <p>
+              <span class="text-break">See how experienced developers solve problems in real-time.</span>
+              <span class="text-break">Watching scripted tutorials is great, but understanding how</span>
+              <span class="text-break">developers think is invaluable.</span>
+            </p>
+          </div>
+
+          <div class="rght-content">
+            <div>
+              <p><a href="#">Try it free 7 days</a> then $20/mo. thereafter</p>
+            </div>
+
+            <div class="form">
+              <form action="#" id="user-form">
+                <div class="input-group">
+                  <div>
+                    <img src="./images/icon-error.svg" class="error-icon" alt="" width="22px" />
+                    <img src="./images/checked.png" class="success-icon" alt="" width="22px" />
+                    <input type="text" name="fname" id="fname" placeholder="First Name" autocomplete="given-name" />
+                  </div>
+                  <div class="error-field"></div>
+                </div>
+
+                <div class="input-group">
+                  <div>
+                    <img src="./images/icon-error.svg" class="error-icon" alt="" width="22px" />
+                    <img src="./images/checked.png" class="success-icon" alt="" width="22px" />
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" autocomplete="family-name" />
+                  </div>
+                  <div class="error-field"></div>
+                </div>
+
+                <div class="input-group">
+                  <div>
+                    <img src="./images/icon-error.svg" class="error-icon" alt="" width="22px"/>
+                    <img src="./images/checked.png" class="success-icon" alt="" width="22px" />
+                    <input type="email novalidate" name="email" id="email" placeholder="Email Address" autocomplete="email" />
+                  </div>
+                  <div class="error-field"></div>
+                </div>
+
+                <div class="input-group">
+                  <div>
+                    <img src="./images/icon-error.svg" class="error-icon" alt="" width="22px"/>
+                    <img src="./images/checked.png" class="success-icon" alt="" width="22px" />
+                    <input type="password" name="passwd" id="passwd" placeholder="Password" autocomplete="new-password" />
+                  </div>
+                  <div class="error-field"></div>
+                </div>
+
+                <button type="submit">Claim your free trial</button>
+                <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Sifath Saleem</a>.
+        </p>
+      </footer> -->
+    </section>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
