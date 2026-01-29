@@ -26,9 +26,9 @@ document.querySelector("#user-form").addEventListener("submit", (e) => {
 
     console.log(user);
 
-    // form.innerHTML = `
-    //   <p style="color: #333; text-align:center;">✅ Form submitted successfully!</p>
-    // `
+    form.innerHTML = `
+      <p style="color: #333; text-align:center;">✅ Form submitted successfully!</p>
+    `
 
 
   }
