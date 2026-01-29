@@ -8,8 +8,6 @@
 
 <p><a href="https://intro-component-with-signup-forrn.netlify.app" target="_blank">Live Demo</a><br>
 
-<em>(Replace with your actual hosted link, e.g., GitHub Pages, Netlify, or Vercel)</em></p>
-
 <h2>Features</h2>
 
 <ul>
